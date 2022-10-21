@@ -2,82 +2,283 @@
 <html>
 <head>
 <title>Shivasankaran</title>
-<link rel="icon" type="image/x-icon" href="VP.png">
+<link rel="icon" type="image/x-icon" href="assets/images/VP.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
 
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <img src="VP.png" class="w3-circle" style="width: 38px;"> 
-    <a href="/index.html" class="w3-bar-item w3-button"><b>Shivasankaran</b></a>
+    <img src="assets/images/VP.png" class="w3-circle" style="width: 38px;"> 
+    <a href="index.html" class="w3-bar-item w3-button"><b>Shivasankaran</b></a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="/publications" class="w3-bar-item w3-button">Publications</a>
-      <a href="/projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="/misc" class="w3-bar-item w3-button">Misc</a>
-      <a href="/blogs" class="w3-bar-item w3-button">Blogs</a>
+      <a href="publications.html" class="w3-bar-item w3-button">Publications</a>
+      <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="misc.html" class="w3-bar-item w3-button">Misc</a>
+      <a href="blogs.html" class="w3-bar-item w3-button">Blogs</a>
     </div>
   </div>
 </div>
 
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
+  <div class="w3-container w3-padding-32" id="research_projects">
+    <h3 class="w3-border-bottom w3-border-bottom w3-border-black w3-bottombar w3-padding-16">Research Projects</h3>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-row l3 m6 w3-margin-bottom w3-third">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-dark-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(170, 170, 170);">
+          <h1 class="w3-large"><b> LineEX: Data Extraction from Scientific Line Charts</b>
+            <a href="https://github.com/Shiva-sankaran/LineEX"><i class="fab fa-github" style='font-size:20px'></i></a>
+            <a href="/assets/docs/lineex.pdf"><i class="fa fa-file-pdf-o" style='font-size:20px;color: red;'></i></a>
+          </h1>
+          <p> 
+            Previous works failed to understand how the underlying information is present in line charts. Proposed a novel loss function considering the slope of lines on 
+            exsisting keypoint detection models like <a href="https://github.com/padeler/PE-former">PE-former</a>. Showcased better qualitative and quantitive results as result of the novel loss function. On top of displaying better performance
+            we also curated the biggest synthetic line charts with more variations compared to previous datasets.
+          </p>
+          <img src="assets/images/lineex_output.png" alt="commentator" width="450" height="170">
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-row l3 m6 w3-margin-bottom w3-third">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-light-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(85, 85, 85);">
+          <h1 class="w3-large"><b>InstaRedeem: Automating the Redemption Of Promotional codes for Freebies</b>
+            <a href="https://github.com/Shiva-sankaran/InstaRedeem"><i class="fab fa-github" style='font-size:20px'></i></a>
+          </h1>
+          <p>We all know it is quite impossible to get anything for free these days from promotional codes, purely due to the number of people who wait forever to get the code. 
+            Unfortunately I do not have such spare time so I made this tool to automate the impossible task of getting goodies from promotion codes posted in Instagram stories. 
+            Made use of the web automation python library Selenium and Pytesseract for OCR to redeem goodies. 
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <!-- <div class="w3-row l3 m6 w3-margin-bottom w3-third">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-dark-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(170, 170, 170);">
+          <h1 class="w3-large"><b>GOLUMN: A Personal Discord Bot</b></h1>
+          <p> </p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>  
+<div class="w3-content w3-padding" style=" max-width:1564px; top:425px; right: 0px;position: relative;">
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+    <h3 class="w3-border-bottom w3-border-bottom w3-border-black w3-bottombar w3-padding-16">Projects</h3>
   </div>
 
   <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-row l3 m6 w3-margin-bottom w3-third">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <div class="w3-display-topleft w3-light-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(85, 85, 85);">
+          <h1 class="w3-large"><b> A Code-mixed Multilingual Text Annotation Framework For Sentiment Analysis</b>
+            <a href="https://github.com/Shiva-sankaran/commentator"><i class="fab fa-github" style='font-size:20px'></i></a>
+            <a href="/assets/docs/commentator_v2.pdf"><i class="fa fa-file-pdf-o" style='font-size:20px;color: red;'></i></a>
+          
+          </h1>
+          <h2 class="w3-small"><b>Shivasankaran V P</b>, Mayank Singh
+          </h1>
+          <p> Extended the existing <a href="https://github.com/Shubh-Nisar/commentator">COMMENTATOR</a> annotation tool for code-mixed sentiment analysis.
+          Annotation suggestions are provided both in sentence-level and in word-level. Integrated Hugging face models with the UI to provide suggestions in the 
+          sentence-level. Word level suggestions are given through basic lexicon lookup. Supports custom lexicon files.
+          </p>
+          <a target="_blank" href="assets/images/commentator.png">
+          <img src="assets/images/commentator.png" alt="commentator" width="450" height="190">
+          </a>
+        </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
+
+    <div class="w3-row l3 m6 w3-margin-bottom w3-third">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <div class="w3-display-topleft w3-dark-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(170, 170, 170);">
+          <h1 class="w3-large"><b>Information Extraction Of Devices Behind NAT Using WebRTC</b>
+            <a href="https://github.com/Shiva-sankaran/Information-extraction-of-devices-behind-NAT-using-WebRTC"><i class="fab fa-github" style='font-size:20px'></i></a>
+            <a href="/assets/docs/Technical report.pdf"><i class="fa fa-file-pdf-o" style='font-size:20px;color: red;'></i></a>
+            <a href="/assets/docs/Work summary report.pdf"><i class="fa fa-file-pdf-o" style='font-size:20px;color: red;'></i></a>
+          </h1>
+          <h2 class="w3-small"><b>Shivasankaran V P</b>, Sameer G Kulkarni
+          </h1>
+          <p> Browser security is a growing concern in recent times. This work demonstrates how easy is for attackers to collect information on naive 
+            users. Specfically we exploited a vulnerablity in WebRTC based on a weakness in <a href="https://www.rfc-editor.org/rfc/rfc7478">ICE</a>. Further,
+            we evaluate the exploitation method on all prominent browsers and discuss the recent prevention measures which have been deployed. Refer to the 
+            technical and work summary report for more information.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
+
+    <div class="w3-row l3 m6 w3-margin-bottom w3-third">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <div class="w3-display-topleft w3-light-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(85, 85, 85);">
+          <h1 class="w3-large"><b> Sign Language Translator In Verilog Using Convolutional Neural Networks</b>
+            <a href="https://github.com/Shiva-sankaran/HandSignDetector-Verilog.git"><i class="fab fa-github" style='font-size:20px'></i></a>
+          </h1>
+          <h2 class="w3-small"><b>Shivasankaran V P</b>, Harshit Ramolia, Anurag Kurle</h2>
+          <p> Leveraging advances in machine learning to ameliorate communication between mute and non-mute people. Implemented a deep CNN network in pure verilog including
+            but not limited to convolution, dense, max-pooling layer and ReLu activation function. Evaluated the performance through manual evaluation the system classfied 85 
+            out of 100 images correctly.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
+  </div>
+</div>  
+
+
+
+<div class="w3-content w3-padding" style="max-width:1564px; top:925px; right: 0px;position: relative;">
+
+  <hr style="height:5px; width:100%; background-color:gray">
+  <div class="w3-row-padding">
+    <div class="w3-row l3 m6 w3-margin-bottom w3-third">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <div class="w3-display-topleft w3-dark-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(170, 170, 170);">
+          <h1 class="w3-large"><b> MathArm: A Mathematical equation detector </b>
+            <a href="https://github.com/Shiva-sankaran/EqnDetector"><i class="fab fa-github" style='font-size:20px'></i></a>
+          </h1>
+          <h2 class="w3-small"><b>Shivasankaran V P</b></h2>
+          <p> One step towards solving math homework :). Deployed a CNN network to detect 82 classes of objects with a classfication accuracy of 92%.
+            Had to fall back to image processing techniques as subscipt/superscipt detection is difficult due to high size_of_objects/ size_of_image ratio;
+            Basically very thin line between variables and their subscript/superscripts. Used heuristics based on area, location, occulsion to form the final
+            detected equation.
+
+          </p>
+        </div>
       </div>
     </div>
+
+    <div class="w3-row l3 m6 w3-margin-bottom w3-third">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-light-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(85, 85, 85);">
+          <h1 class="w3-large"><b>Course Recommendation System for IITGN</b>
+            <a href="https://github.com/Shiva-sankaran/CourseRecommender"><i class="fab fa-github" style='font-size:20px'></i></a>
+          </h1>
+          <h2 class="w3-small"><b>Shivasankaran V P</b> </h2>          
+          <p> Choosing courses in second and third of undergraduate studies is always a hassle especially the open electives. In order to alleviate the chaos we designed a simple course recommendation tuned for IITGN. 
+            The student has to rate past taken courses, and based on multiple factors such as topic, instructor, credits, discipline we recommend courses.
+          </p>
+          <a target="_blank" href="assets/images/Course_recommendation_system.png">
+          <img src="assets/images/Course_recommendation_system.png" alt="crsystem" width="450" height="190">
+        </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="w3-row l3 m6 w3-margin-bottom w3-third">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-dark-grey w3-padding" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(170, 170, 170);">
+          <h1 class="w3-large"><b> </b></h1>
+          <p> project descddddddddddddddddddddddsdfasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<div class="w3-content w3-padding" style="max-width:1564px; top:1375px; right: 0px;position: relative;">
+
+  <div class="w3-container w3-padding-32" id="tools">
+    <h3 class="w3-border-bottom w3-border-bottom w3-border-black w3-bottombar w3-padding-16">Tools</h3>
   </div>
 
+  <!-- <hr style="height:5px; width:100%; background-color:black"> -->
   <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-row l3 m6 w3-margin-bottom w3-third">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <div class="w3-display-topleft w3-dark-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(170, 170, 170);">
+          <h1 class="w3-large"><b> STARK: Personal Assistant For Linux</b>
+            <a href="https://github.com/Shiva-sankaran/S.T.A.R.K"><i class="fab fa-github" style='font-size:20px'></i></a>
+          </h1>
+          <p> Created a personal assistant STARK for linux systems in python. Incorported various API's to do everyday student tasks. STARK is capable of 
+            handling google classroom activities, mailing, maintaining timetable, basic web search and more. Currently working on making it voice compatible.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
+    
+    <div class="w3-row l3 m6 w3-margin-bottom w3-third">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <div class="w3-display-topleft w3-light-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(85, 85, 85);">
+          <h1 class="w3-large"><b>InstaRedeem: Automating the Redemption Of Promotional codes for Freebies</b>
+            <a href="https://github.com/Shiva-sankaran/InstaRedeem"><i class="fab fa-github" style='font-size:20px'></i></a>
+          </h1>
+          <p>We all know it is quite impossible to get anything for free these days from promotional codes, purely due to the number of people who wait forever to get the code. 
+            Unfortunately I do not have such spare time so I made this tool to automate the impossible task of getting goodies from promotion codes posted in Instagram stories. 
+            Made use of the web automation python library Selenium and Pytesseract for OCR to redeem goodies. 
+
+
+
+          </p>
+        </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
+
+    <!-- <div class="w3-row l3 m6 w3-margin-bottom w3-third">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <div class="w3-display-topleft w3-dark-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(170, 170, 170);">
+          <h1 class="w3-large"><b>GOLUMN: A Personal Discord Bot</b></h1>
+          <p> </p>
+        </div>
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-      </div>
-    </div>
+    </div> -->
   </div>
+</div>
+
+<div class="w3-content w3-padding" style="max-width:1564px; top:1825px; right: 0px;position: relative;">
+
+  <div class="w3-container w3-padding-32" id="design">
+    <h3 class="w3-border-bottom w3-border-bottom w3-border-black w3-bottombar w3-padding-16">Design</h3>
+  </div>
+
+  <!-- <hr style="height:5px; width:100%; background-color:black"> -->
+  <div class="w3-row-padding">
+    <div class="w3-row l3 m6 w3-margin-bottom w3-third">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-light-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(85, 85, 85);">
+          <h1 class="w3-large"><b> COVID 19 Social Distancing data extraction and analyzation</b></h1>
+          <p>Desined lightweight head-mounted device to track remind people to upkeep social distance. The device tracks number of people the user came in contact with through
+            PIR sensors and NodeMCU. The data collected is sent to a server where data analyzation is done. Won 2nd price in IITGN Virtual Build-a-thon.
+          </p>
+          <a target="_blank" href="assets/images/headmount_covid.png">
+            <img src="assets/images/headmount_covid.png" alt="headmount" width="450" height="250">
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="w3-row l3 m6 w3-margin-bottom w3-third">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-light-grey w3-padding" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(85, 85, 85);">
+          <h1 class="w3-large"><b>InstaRedeem</b></h1>
+          <p> project descdddddddddddddddddddddd sdfasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="w3-row l3 m6 w3-margin-bottom w3-third">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-dark-grey w3-padding" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(170, 170, 170);">
+          <h1 class="w3-large"><b>GOLUMN: A Personal Discord Bot</b></h1>
+          <p> project descddddddddddddddddddddddsdfasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
 
 </div>
 </body>

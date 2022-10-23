@@ -1,0 +1,10 @@
+.hide {
+    display: none;
+  }
+      
+.inline:hover + .hide {
+    display: block;
+    color: red;
+}
+div.inline { float:left; }
+.clearBoth { clear:both; }

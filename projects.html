@@ -23,7 +23,7 @@
       <a href="index.html" class="w3-bar-item w3-button">About</a>
       <a href="publications.html" class="w3-bar-item w3-button">Publications</a>
       <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-      <a href="misc.html" class="w3-bar-item w3-button">Misc</a>
+      <!-- <a href="misc.html" class="w3-bar-item w3-button">Misc</a> -->
       <a href="blogs.html" class="w3-bar-item w3-button">Blogs</a>
     </div>
   </div>
@@ -56,11 +56,13 @@
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-light-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(85, 85, 85);">
           <h1 class="w3-large"><b>Image Retrieval Using Multi-Modal Inputs</b>
+            <a href="https://github.com/md-hassan/Sketch-Text-Image-Retrieval"><i class="fab fa-github" style='font-size:20px'></i></a>
+            <a href="/assets/docs/MM-IR.pdf"><i class="fa fa-file-pdf-o" style='font-size:20px;color: red;'></i></a>
             <img src="assets/icons/wip.png" alt="commentator" width="30" height="30">
           </h1>
           <p>We plan on using textual description and an optional hand-drawn sketches to perform image retrieval. We leverage the recently proposed
             <a href="https://openai.com/blog/clip/">CLIP</a> to find an common embedding space for all three forms of data (Image, Sketech, Text). We are mainly referencing 
-            this <a href="https://arxiv.org/pdf/2208.03354.pdf">paper</a> and plan on building on top of the work. Submitting to CVPR 2023.
+            this <a href="https://arxiv.org/pdf/2208.03354.pdf">paper</a> and plan on building on top of the work. For now, we have implemented the proposed model in their paper and replicated their results. The authors have not released their code yet, but we have released our code for the scientific community :).
           </p>
         </div>
       </div>
@@ -69,12 +71,16 @@
     <div class="w3-row l3 m6 w3-margin-bottom w3-third">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-dark-grey w3-padding w3-hover-border-red" style="height: 500px; width: 100%; word-wrap: break-word;border: 5px solid rgb(170, 170, 170);">
-          <h1 class="w3-large"><b>Sparse Attention For Vision Transformer</b>
+          <h1 class="w3-large"><b>Sufficient Attention Is All You Need</b>
+            <a href="https://github.com/Shiva-sankaran/SparseAttentionViT"><i class="fab fa-github" style='font-size:20px'></i></a>
+            <a href="/assets/docs/Sufficient Attention Is All You Need.pdf"><i class="fa fa-file-pdf-o" style='font-size:20px;color: red;'></i></a>
             <img src="assets/icons/wip.png" alt="commentator" width="30" height="30">
           </h1>
-          <p> Formulating a sparse attention space inspired by the work done in <a href="https://arxiv.org/pdf/2007.14062.pdf">Big Bird</a>. Currently experimenting with 
-            different combinations of hypotheses based on visual perception for sparse attention.
-          </p>
+          <p> 
+            Exploring sprase self-atttention for small scale ViT with limited training data. Adapted a sparse self-attention proposed in <a href="https://arxiv.org/pdf/2007.14062.pdf">Big Bird</a>. 
+            The best performing sparse self-attention pattern showcased an 18% improvement in top-1 accuracy over full self-attention. Intrestingly, even random sparse self-attention showcased a 11% improvement
+            in top-1 accuracy over full self-attention. Currently expanding the work by comparing against convolutional variants of ViT which are more data efficent.
+          </p> 
         </div>
       </div>
     </div>
